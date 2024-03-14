@@ -3,12 +3,14 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Org {
 	static WebElement element=null;
 	
 	
-//	Login to the Portal
+
+	//	Login to the Portal
 	public static WebElement Login_Button(WebDriver driver) {
 		element =driver.findElement(By.xpath("//*[@id='root']/div/div/div/div[2]/button"));
 		return element;
@@ -32,15 +34,12 @@ public class Org {
 		
 //	Navigate to Core
 	public static WebElement Hamburger_Menu(WebDriver driver) {
-		element =driver.findElement(By.xpath("//button[@aria-label='menu']//*[name()='svg']"));
+		element =driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div/div/div/div[1]/button[2]"));
 		return element;
 	}
-	public static WebElement Core_selection(WebDriver driver) {
-		element =driver.findElement(By.xpath("//span[normalize-space()='Core']"));
-		return element;
-	}
+	
 	public static WebElement Org_selection(WebDriver driver) {
-		element =driver.findElement(By.xpath("//p[normalize-space()='Organization']"));
+		element =driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body2 css-z01lgo css-1bz7ler'][normalize-space()='Organization'])[1]"));
 		return element;
 	}
 	
