@@ -1,0 +1,24 @@
+{
+  "name": "protractorlearning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^117.0.3",
+    "uuid": "^9.0.1",
+    "webdriver-manager": "^12.1.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "babel-register": "^6.26.0",
+    "protractor": "^7.0.0"
+  }
+}
