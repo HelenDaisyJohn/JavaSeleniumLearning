@@ -17,7 +17,6 @@ public class CartPage extends AbstractComponent{
 	@FindBy(css=".cartSection h3")
 	private List<WebElement> productTitles;
 	
-
 	public CartPage(WebDriver driver) {
 		super(driver);
 		this.driver=driver;
