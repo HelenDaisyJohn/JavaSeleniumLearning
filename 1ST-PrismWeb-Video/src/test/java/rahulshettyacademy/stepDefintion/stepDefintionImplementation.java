@@ -48,7 +48,6 @@ public class stepDefintionImplementation extends BaseTest{
 		Assert.assertTrue(match);
 		CheckoutPage checkoutPage=cartPage.goToCheckout();
 		checkoutPage.selectCountry("india");
-		  
 		confirmationPage=checkoutPage.SubmitOrder();
 	}
 	
